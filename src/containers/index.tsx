@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerWrapper, Block, RightTop, RightBottom, Right } from './styles';
+import { BackgroundImage, ContainerWrapper, Block, RightTop, RightBottom, Right } from './styles';
 import { Images } from '../components/Images';
 import { Banner } from '../components/Banner'
 import withAnimation from '../components/withAnimation';
@@ -7,6 +7,8 @@ import withAnimation from '../components/withAnimation';
 const AddingBorder = withAnimation(Images,'Border','white');
 const HomePage: React.FunctionComponent = ()=> {
       return (
+        <>
+        <BackgroundImage />
         <ContainerWrapper>
           <Banner/>
           <Block>
@@ -21,6 +23,7 @@ const HomePage: React.FunctionComponent = ()=> {
             </Right>
           </Block>
         </ContainerWrapper>
+        </>
       );
   }
 
