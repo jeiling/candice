@@ -1,19 +1,18 @@
 import React from 'react';
-import { BackgroundImage, ContainerWrapper } from './styles';
-import { Banner } from '../components/Banner'
-import withAnimation from '../components/withAnimation';
 import HomePage from './HomePage';
-
-const Root: React.FunctionComponent = ()=> {
+import MemberPage from './LeaderPage'
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+const Root: React.FunctionComponent = () => {
       return (
-        <>
-        <BackgroundImage />
-        <ContainerWrapper>
-          <Banner/>
-          <HomePage/>
-        </ContainerWrapper>
-        </>
+        <BrowserRouter>
+          <Switch>
+            <Route exact={true} path={'/'} component={HomePage} />
+            <Route exact={true} path={'/leader/:id'} component={MemberPage} />
+          </Switch>
+        </BrowserRouter>
+          
+          
       );
   }
 
-export default HomePage;
+export default Root;

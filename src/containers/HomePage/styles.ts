@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+export interface IBackgroundImage {
+    backgroundImg: string;
+}
 export const BackgroundImage = styled.div`
     position: fixed;
     top: 0;
@@ -9,7 +12,7 @@ export const BackgroundImage = styled.div`
     z-index: -1;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('https://images.unsplash.com/photo-1518691340140-512e66ce957b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1346&q=80');
+    background-image: url(${({backgroundImg}:IBackgroundImage) => backgroundImg})
 `;
 
 export const ContainerWrapper = styled.div`
