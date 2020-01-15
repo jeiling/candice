@@ -1,1 +1,1 @@
-export const leaders: { [key: string]: string }  = { cat: 'Little Cat', vegetable: 'Little Vegetable', chef: 'Mon Chef'}
+export const leaders: Array<string> = ['Little Cat', 'Little Vegetable', 'Mon Chef'];
