@@ -1,10 +1,21 @@
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+ 
+const moving = keyframes`
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-10%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  `
 
-interface IBorderWrapperProps {
-    backgroundColor: string;
-  }
-  
-  export const BorderWrapper = styled.div`
-   background-color: ${({ backgroundColor }: IBorderWrapperProps) => backgroundColor};
-  
+  export const AnimationWrapper = styled.div`
+    :hover {
+      animation: ${moving} 0.7s 1;
+    }
   `;
+
+  
