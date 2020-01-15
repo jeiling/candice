@@ -1,0 +1,1 @@
+export const leaders: { [key: string]: string }  = { cat: 'Little Cat', vegetable: 'Little Vegetable', chef: 'Mon Chef'}
