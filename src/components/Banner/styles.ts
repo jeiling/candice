@@ -8,8 +8,11 @@ export const BannerStyle = styled.div`
     text-align: center;
 `
 
-export const Text = styled.div`
+export const BannerText = styled.button`
     font-family: fantasy;
     font-size: 4rem;
     margin: 1.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
 `

@@ -1,9 +1,11 @@
 import React from 'react';
-import { BannerStyle, Text } from './styles'
+import { BannerStyle, BannerText } from './styles';
 export const  Banner: React.FunctionComponent =()=>{
     return(
        <BannerStyle>
-           <Text>Candice cellgroup</Text>
+           <BannerText>
+               Candice cellgroup
+            </BannerText>
        </BannerStyle>
     )
 }
