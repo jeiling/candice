@@ -21,7 +21,7 @@ export const Button: React.FunctionComponent = () => {
         <>
             {leaders.map((leader, index)=>(
                 <AddingAnimation key={index} onClick={() => clickHandler(index)}>
-                    <A  key={`${leader}`}>
+                    <A>
                         {leader}
                     </A>
                 </AddingAnimation>

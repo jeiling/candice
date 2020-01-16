@@ -19,7 +19,7 @@ export const LeaderButton = styled.button`
         width: 200px;
     }
 `
-export const A = styled.a`
+export const A = styled.div`
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.5rem;
