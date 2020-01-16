@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackgroundImage, ContainerWrapper, Block, RightTop, RightBottom, Right } from './styles';
+import { BackgroundImage, ContainerWrapper, Block, RightTop, RightBottom, Right, Left } from './styles';
 import { LeadersButtons } from '../../components/LeadersButtons';
 import { Banner } from '../../components/Banner'
 class HomePage extends React.Component {
@@ -14,6 +14,7 @@ class HomePage extends React.Component {
         <ContainerWrapper>
           <Banner/>
           <Block>
+            <Left></Left>
             <Right>
               <RightTop>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aut voluptate voluptas vero omnis dolorum. Illo commodi tenetur cupiditate optio quidem libero quaerat quo, vero sapiente ea aspernatur dolores ducimus?</p>

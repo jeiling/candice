@@ -48,17 +48,43 @@ const colorRendering = keyframes`
     }
   `
 
-export const Right = styled.div`
+const imgMoving = keyframes`
+    0% {
+        margin-right: 70%;
+    }
+    100% {
+        margin-right: 40%;
+    }
+`
+
+export const Left = styled.div`
     height: 500px;
     width: 600px;
-    margin-right: 5%;
+    background-color: darkcyan;
+    display: flex;
+    animation: ${imgMoving} 1s forwards;
+    background: url('https://i.pinimg.com/564x/52/da/1e/52da1ea0ba8fc63019506095cc36f31c.jpg');
+    border-radius: 10px;
+    z-index: 2px;
+
+    @media (max-width: 1024px) {
+        margin-right: 0;
+    }
+
+`
+export const Right = styled.div`
+    position: absolute;
+    height: 500px;
+    width: 600px;
+    right: 5%;
     flex-direction: column;
     display: flex;
     border-radius: 10px;
     border: 2px rgba(255, 255, 255, 0.3) solid;
+    z-index: 3;
 
     :hover{
-        animation: ${colorRendering} .4s 1 forwards;
+        animation: ${colorRendering} .6s 1 forwards;
     }
 
     @media (max-width: 1024px) {
