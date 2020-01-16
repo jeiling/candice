@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export interface IBackgroundImage {
     backgroundImg: string;
@@ -29,6 +29,24 @@ export const Block = styled.div`
         justify-content: center;
     }
 `
+const colorRendering = keyframes`
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    }
+    75% {
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 6px 6px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.6);
+        box-shadow: 7px 7px rgba(0, 0, 0, 0.4);
+    }
+  `
 
 export const Right = styled.div`
     height: 500px;
@@ -37,7 +55,11 @@ export const Right = styled.div`
     flex-direction: column;
     display: flex;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px rgba(255, 255, 255, 0.3) solid;
+
+    :hover{
+        animation: ${colorRendering} .4s 1 forwards;
+    }
 
     @media (max-width: 1024px) {
         margin-right: 0;
