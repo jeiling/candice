@@ -3,7 +3,6 @@ import { A, LeaderButton } from './styles';
 import { leaders } from '../../common/leadersInfo'
 import withAnimation from '../../components/withAnimation';
 import {
-    BrowserRouter as Router,
     useHistory,
   } from "react-router-dom";
 
