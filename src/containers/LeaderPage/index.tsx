@@ -9,7 +9,7 @@ const LeaderPage : React.FunctionComponent = () =>  {
     const { id } = useParams<{id: string}>();
         return (
             <>
-                <BackgroundImage backgroundImg = {'https://images.unsplash.com/photo-1515007917921-cad9bf0e2e87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'} />
+                <BackgroundImage backgroundImg = {'https://images.unsplash.com/photo-1452827073306-6e6e661baf57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80'} />
                 <Banner/>
                 <TopBlock>
                     <LittleParent Img={leadersImgs[id]}>
